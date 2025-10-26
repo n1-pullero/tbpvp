@@ -50,7 +50,7 @@ const Features = {
 	 * @function Engine.isSecureContext
 	 */
 	isSecureContext: function () {
-		return window['isSecureContext'] === true;
+		return true;
 	},
 
 	/**
