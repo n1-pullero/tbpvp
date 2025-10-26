@@ -20,10 +20,6 @@ body {
 
 #canvas {
 	display: block;
-	position: absolute;
-	top: 50vh;
-	left: 50vw;
-	translate: -50% -50%;
 }
 
 #canvas:focus {
@@ -42,7 +38,7 @@ body {
 }
 
 #status {
-	background-color: #242424;
+	background-color: #000000;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -99,7 +95,7 @@ body {
 
 	</head>
 	<body>
-		<canvas id="canvas" width="1000" height="600">
+		<canvas id="canvas">
 			Your browser does not support the canvas tag.
 		</canvas>
 
@@ -108,14 +104,14 @@ body {
 		</noscript>
 
 		<div id="status">
-			<img id="status-splash" class="show-image--true fullsize--true use-filter--true" src="index.png" alt="">
+			<img id="status-splash" class="show-image--true fullsize--true use-filter--false" src="index.png" alt="">
 			<progress id="status-progress"></progress>
 			<div id="status-notice"></div>
 		</div>
 
 		<script src="index.js"></script>
 		<script>
-const GODOT_CONFIG = {"args":[],"canvasResizePolicy":0,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":357456,"index.wasm":43699190},"focusCanvas":true,"gdextensionLibs":[]};
+const GODOT_CONFIG = {"args":[],"canvasResizePolicy":2,"ensureCrossOriginIsolationHeaders":true,"executable":"index","experimentalVK":false,"fileSizes":{"index.pck":380800,"index.wasm":43699190},"focusCanvas":true,"gdextensionLibs":[]};
 const GODOT_THREADS_ENABLED = false;
 const engine = new Engine(GODOT_CONFIG);
 
